@@ -4,7 +4,6 @@ import time
 import io
 import csv
 import sys
-import os
 
 from custom_modules import func_use_extract_data as func
 from custom_modules import func_analysis as analysis
