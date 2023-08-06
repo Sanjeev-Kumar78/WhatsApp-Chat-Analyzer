@@ -22,7 +22,7 @@ def extract_emojis(s):
     """
         This function is used to calculate emojis in text and return in a list.
     """
-    return [c for c in s if c in emoji.EMOJI_DATA]
+    return [c for c in s if c in emoji.UNICODE_EMOJI]
 
 
 def stats(data):

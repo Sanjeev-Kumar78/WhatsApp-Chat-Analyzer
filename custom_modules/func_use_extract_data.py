@@ -1,6 +1,6 @@
 import pandas as pd
 import re
-
+import emoji
 import custom_modules.func_analysis as analysis
 
 
@@ -22,12 +22,18 @@ def startsWithAuthor(s):
         Returns:
             True if it contains author name otherwise False
     """
+    # pattern = '^([\w()\[\]-]+):|([\w]+[\s]+([\w()\[\]-]+)):'
+    # result = re.match(pattern, s)
+    # if result:
+    #     return True
+    # else:
+    #     return False
 
-    pattern = '^([\w()\[\]-]+):|([\w]+[\s]+([\w()\[\]-]+)):'
-    result = re.match(pattern, s)
-    if result:
+    """Authors Name along with emojis are also considered"""
+    if s.find(":") != -1:
         return True
-    return False
+    else:
+        return False
 
 
 def getDataPoint(line):
@@ -113,7 +119,7 @@ def read_data(file_contents, date_format):
 
     df = pd.DataFrame(data, columns=['Date', 'Time', 'Author', 'Message'])
     df["Date"] = pd.to_datetime(
-        df["Date"], format=date_formats_dict[date_format])
+        df["Date"], infer_datetime_format=True)
     df['emoji'] = df["Message"].apply(analysis.extract_emojis)
 
     return df
