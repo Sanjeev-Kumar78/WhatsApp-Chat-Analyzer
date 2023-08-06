@@ -17,12 +17,12 @@ st.set_option('deprecation.showfileUploaderEncoding', False)
 st.title("WhatsApp Chat Analyzer 😃")
 st.markdown(
     "This app is use to analyze your WhatsApp Chat using the exported text file 📁.")
-st.sidebar.image("assets\\images\\banner.jpeg",use_column_width=True)
+st.sidebar.image("./assets/images/banner.jpeg",use_column_width=True)
 st.sidebar.title("Analyze:")
 st.sidebar.markdown(
     "This app is use to analyze your WhatsApp Chat using the exported text file 📁.")
 
-st.sidebar.markdown('<b>Premchandra Singh</b>\
+st.sidebar.markdown('<b>Prem Chandra Singh</b>\
                 <a href = "https://github.com/pcsingh/WhatsApp-Chat-Analyzer/" ><img src = "https://img.shields.io/badge/Author-@pcsingh-gray.svg?colorA=gray&colorB=dodgerblue&logo=github"/>\
                 <a/>', unsafe_allow_html=True)
 
@@ -96,7 +96,7 @@ if filename is not None:
         if data.empty:
             st.error("Please upload the WhatsApp chat dataset!")
 
-        if st.sidebar.checkbox("Show raw data", False):
+        if st.sidebar.checkbox("Show raw data", True):
             st.write(data)
         # ------------------------------------------------
 

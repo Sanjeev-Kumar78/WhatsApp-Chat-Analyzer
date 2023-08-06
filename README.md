@@ -9,7 +9,7 @@
 
 ---
 
-> **You can view the working project [here](https://whatsapp-chat-analyzer.herokuapp.com/).**
+> **You can view the working project [here](https://whatsapp-chat-analyzer-4i8l.onrender.com).**
 
 [![WhatsApp Chat Analyzer](https://img.shields.io/badge/WhatsApp_Chat-Analyzer-teal.svg?colorA=teal&colorB=orange&style=for-the-badge)](https://github.com/pcsingh/WhatsApp-Chat-Analyzer/) [![IoT](https://img.shields.io/badge/Data-Science-teal.svg?colorA=blue&colorB=red&style=for-the-badge)](https://github.com/pcsingh/WhatsApp-Chat-Analyzer/)
 
@@ -19,7 +19,7 @@ And many other insights you can get from this Analyzer. Anyone obviously, who ha
 
 Check it [here](https://education.github.com/pack/gallery) under Student gallery by GitHub Education :tada:.
 
-**Important: Don't worry, none of your data is stored.**
+**Important: Don't worry, none of your data is stored. For testing use the dummy chat.**
 
 ## Getting Started
 
@@ -78,7 +78,7 @@ git push -u origin <your_branch_name>
 
 [![GitHub open issues](https://img.shields.io/github/issues/pcsingh/WhatsApp-Chat-Analyzer?logo=github)](https://github.com/pcsingh/WhatsApp-Chat-Analyzer/issues) [![GitHub contributors](https://img.shields.io/github/contributors/pcsingh/WhatsApp-Chat-Analyzer?logo=github)](https://github.com/pcsingh/WhatsApp-Chat-Analyzer/graphs/contributors) [![Premchandra Singh](https://img.shields.io/badge/Author-@pcsingh-gray.svg?colorA=gray&colorB=dodgerblue&logo=github)](https://github.com/pcsingh/)
 
-- Install packages given in `requirements.txt`.
+- Install packages given in `requirements.txt` (packages need **Python 3.11.0**).
 
 ```bash
 pip install -r requirements.txt
